@@ -1,0 +1,212 @@
+body{
+    background-image: linear-gradient(45deg, red, orange, yellow);
+    padding:0;
+    height:250vh;
+}
+.challenge-link{
+    display: block;
+    height: 5vw;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 3vw;
+}
+
+/*Palindrome Checker*/
+.palindrome-checker{
+    background-color:#b99fc4;
+    position: relative;
+    height: 65vw;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 70px;
+    border: double rgb(138, 94, 94) 10px;
+}
+.palindrome-heading{
+    font-family: monospace;
+    font-size:6vw;
+    text-align: center;
+    margin-top: 100px;
+}
+.infoInput{
+    display:block;
+    margin-left: 5%;
+    margin-top: 200px;
+}
+#message{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 40px;
+    font-size:5.5vw;
+    text-transform: uppercase;
+    border: dotted #fff6c2 15px;
+    border-radius: 10px;
+    width: 90%;
+    visibility:hidden;
+}
+#enter{
+    height: 6vw;
+    width: 90%;
+    font-size: 4vw;
+    border: none;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+#submitButton1{
+    height: 4vw;
+    width: 18vw;
+    background-color: black;
+    color: white;
+    border: none;
+    padding-top: .5vw;
+    font-size: 3vw;
+    margin-top: 10px;
+    border-radius: 5px;
+    display:block;
+    margin-left:auto;
+    margin-right: 9.45%;
+}
+
+/*Roman Numeral Translator */
+.roman-numeral{
+    font-family:sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(35deg, #00ffe2, #86d0ca, #0cc2f8);
+    height: 80vw;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.roman-heading{
+    text-align: center;
+    padding-bottom: 40px;
+    color: #484877;
+    font-size: 4.5vw;
+}
+.container{
+    padding-top: 100px;
+}
+#romanTranslator{
+    width: 80vw;
+    padding-left: 4vw;
+    display: flex;
+}
+#numberIn{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: solid white 1px;
+    margin-right: 10px;
+    font-size: 2em;
+    text-align: right;
+    margin-left: 8%;
+}
+#submitButton2{
+    height: 40px;
+    font-weight: 700;
+    color: #d9d9d9;
+    border: solid #e6e6e6 3px;
+    background-color: #414040;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: flex-end;
+    margin-top: 3px;
+    cursor: pointer;
+}
+#numberOut{
+    display: none;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: #d9d9d9;
+    margin-top: 50px;
+    height: 25vw;
+    width: 85vw;
+    border: #9d9d9d outset 3px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 6vw;
+}
+#numberIn:focus{
+    outline: none;
+    border: none;
+}
+
+/* Cipher */
+.cipher-body{
+    background-color: #a2ffe0;
+    height: 80vw;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 70px;
+    border: double rgb(138, 94, 94) 10px;
+}
+#cipherInput{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 70%;
+}
+#heading{
+    margin-top: 3vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+#codeInput{
+    width: 100%;
+    height: 4vw;
+}
+#submitButton3{
+    margin-top: 1.5vw;
+    width: 30vw;
+    height:6vw;
+    font-size:4vw;
+    margin-right: 30vw;
+    margin-left:36.1vw;
+}
+#decodedMessage{
+    display: none;
+    margin-top: 5vw;
+    font-size: 4vw;
+    font-weight: 700;
+    width: 80%;
+    padding: 6vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    text-align: center;
+    border: dotted red 15px;
+    color: rgb(83, 5, 5);
+}
+
+/*PsuedoSelectors*/
+#submitButton1:hover, #submitButton2:hover, #submitButton3:hover{
+    cursor: pointer;
+    background-color: #524f4f;
+    color: #ebebeb;
+}
+#submitButton1:focus{
+    border:solid white 2px;
+}
+
+/* Media Queries */
+@media (max-width:900px) {
+    .palindrome-checker{
+        height: 60vh; 
+    }
+    .roman-numeral{
+        height: 80vh;
+    }
+    .cipher-body{
+        height: 80vh;
+    }
+}
